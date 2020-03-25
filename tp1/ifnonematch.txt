@@ -1,0 +1,26 @@
+curl -v -H "If-None-Match" http://lmbp.uca.fr/\~barrel/tp1/test.html                          
+*   Trying 193.54.49.17:80...
+* TCP_NODELAY set
+* Connected to lmbp.uca.fr (193.54.49.17) port 80 (#0)
+> GET /~barrel/tp1/test.html HTTP/1.1
+> Host: lmbp.uca.fr
+> User-Agent: curl/7.65.3
+> Accept: */*
+> 
+* Mark bundle as not supporting multiuse
+< HTTP/1.1 200 OK
+< Date: Sun, 22 Mar 2020 13:02:49 GMT
+< Server: Apache
+< Content-Location: test.html.txt.fr
+< Vary: negotiate,accept,accept-language
+< TCN: choice
+< Last-Modified: Mon, 18 Mar 2019 06:24:32 GMT
+< ETag: "a-584587109a800;52adcf361d500"
+< Accept-Ranges: bytes
+< Content-Length: 10
+< Content-Type: text/plain
+< Content-Language: fr
+< 
+Bienvenue
+* Connection #0 to host lmbp.uca.fr left intact
+
