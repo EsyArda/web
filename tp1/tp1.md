@@ -4,7 +4,7 @@
 
 2. `curl -X OPTIONS -v http://lmbp.uca.fr/\~barrel/tp1/test.html`
 
-3. `curl -H "accept-language:en" -v http://lmbp.uca.fr/\~barrel/tp1/test.html`
+3. `curl -H "accept-language:en" -H "accept:text/html" -v http://lmbp.uca.fr/\~barrel/tp1/test.html`
 
 4. - `curl -v -H "If-Modified-Since:Mon, 18 Mar 2019 06:24:32 GMT" http://lmbp.uca.fr/\~barrel/tp1/test.html `
      304 si la page n'a pas été modifiée 200 sinon.
