@@ -1,0 +1,116 @@
+/* mise en page globale, structure de la page */
+html
+{
+  background-color: #222;
+
+}
+
+body {
+ font-family:tahoma, geneva, sans-serif;
+}
+
+#titre_page
+{
+  text-align: center;
+  color: #EEE;
+}
+
+#corps
+{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/******************************************************************************/
+/* corps de la page, pour les différentes sections */
+section
+{
+    width: 900px;
+    margin: auto;
+    text-align: justify;
+    padding-left: 20px; /* marge intérieure */
+    padding-right: 20px;
+    margin: 20px; /* Marge extérieure */
+    background-color: #DDDDDD;
+    border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+    word-wrap: break-word;
+    color: #000;
+}
+
+/******************************************************************************/
+/* pied de la page */
+footer
+{
+  width: 1200px;
+  height: 60px;
+  display : table;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 20px; /* marge intérieure */
+  word-wrap: break-word;
+  background-color: #DDDDDD;
+  border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+  text-align: center;
+  color: #000;
+}
+
+/******************************************************************************/
+/* menu horizontal */
+#menu
+{
+  width: 1200px;
+  height: 60px;
+  display: table;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 0px;
+  padding: 0px; /* marge intérieure */
+  word-wrap: break-word;
+  background-color: #DDDDDD;
+  border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+}
+
+.lien_menu
+{
+  display: table-cell;
+  width: 100px;
+}
+
+.affichage_lien_menu {
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  color: #000;
+  line-height: 60px;
+}
+
+/* menu latéral */
+#menu_lat
+{
+  width: 300px;
+  margin: auto;
+  text-align: justify;
+  padding: 20px; /* marge intérieure */
+  margin: 20px; /* Marge extérieure */
+  word-wrap: break-word;
+  background-color: #DDDDDD;
+  border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+}
+
+.lien_menu_lat
+{
+  display: table;
+  width: 100px;
+}
+
+.affichage_lien_menu_lat {
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  color: #000;
+  line-height: 40px;
+}
