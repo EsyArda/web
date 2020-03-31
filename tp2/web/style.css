@@ -10,13 +10,6 @@ html
   color: #EEE;
 }
 
-#page
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
 #corps
 {
     display: flex;
@@ -38,6 +31,7 @@ section
     background-color: #DDDDDD;
     border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
     word-wrap: break-word;
+    color: #000;
 }
 
 /******************************************************************************/
@@ -78,13 +72,13 @@ footer p
   border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
 }
 
-#lien_menu
+.lien_menu
 {
   display: table-cell;
   width: 100px;
 }
 
-#affichage_lien_menu {
+.affichage_lien_menu {
   text-decoration: none;
   display: block;
   text-align: center;
@@ -105,13 +99,13 @@ footer p
   border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
 }
 
-#lien_menu_lat
+.lien_menu_lat
 {
   display: table;
   width: 100px;
 }
 
-#affichage_lien_menu_lat {
+.affichage_lien_menu_lat {
   text-decoration: none;
   display: block;
   text-align: center;
