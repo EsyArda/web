@@ -52,14 +52,15 @@ section
 h2
 {
   text-align: center;
-  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 40px;
   color: #FF9966;
 }
 
 h3
 {
   text-align: center;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
   color: #FF9966;
 }
 
@@ -71,6 +72,12 @@ h4
 p
 {
   text-indent: 50px;
+}
+
+p a
+{
+  text-decoration: none;
+  color: #FF9966;
 }
 
 /******************************************************************************/
@@ -90,6 +97,7 @@ footer
   background-color: #371326;
   border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
   text-align: center;
+  line-height: 50px;
   color: #DDD;
 }
 
