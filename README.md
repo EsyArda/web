@@ -10,4 +10,5 @@ TPs de Web (L2 informatique)
     - tableau
 - CSS :
     - flexbox
-    pseudo-formats
+    - pseudo-formats
+    - adapter le site à différentes résolutions
