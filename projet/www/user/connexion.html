@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <title> La bibliothèque d'Hamaskis </title>
+    <link rel = "stylesheet" type = "text/css" href = "../style.css" />
+    <script language="javascript" type="text/javascript" src="form.js"> </script>
+</head>
+
+<body>
+    <!-- en-tete -->
+    <header>
+        <li> <a href="index.html"> Connexion </a> </li>
+        <h1 id="titre_page"> La bibliothèque d'Hamaskis </h1>
+    </header>
+
+    <!-- menu de navigation horizontal -->
+    <nav>
+        <menu id="menu">
+            <li class="lien_menu"> <a class="affichage_lien_menu" href="../index.html"> Accueil </a> </li>
+            <li class="lien_menu"> <a class="affichage_lien_menu" href="../lore.html"> Histoire de Titan </a> </li>
+            <li class="lien_menu"> <a class="affichage_lien_menu" href="../scenarios.html"> Scénarios </a> </li>
+            <li class="lien_menu"> <a class="affichage_lien_menu" href="../ressources.html"> Ressources </a> </li>
+            <li class="lien_menu"> <a class="affichage_lien_menu" href="../fral.html"> Chroniques de Frâl </a> </li>
+        </menu>
+    </nav>
+
+    <div id="corps">
+        <!-- menu de navigation latéral -->
+        <aside>
+            <nav>
+                <menu id="menu_lat">
+                    <li class="lien_menu_lat"> <a class="affichage_lien_menu_lat" href="https://scriptarium.fr/defisfantastiques/"> Site officiel </a> </li>
+                    <li class="lien_menu_lat"> <a class="affichage_lien_menu_lat" href="#contact"> Contact </a> </li>
+                </menu>
+            </nav>
+        </aside>
+
+        <!-- corps de la page -->
+        <section>
+            <h2> Connexion </h2>
+            Tu possède déjà un compte ? Connecte toi !
+            <form id="connexion" name="connexion" method="post"/>
+                <input type="text" name="nom" id="nom" maxlength="50" class="input_connexion" value="Nom" onClick="saisir('Nom', this.id)" onMouseOut="retablir('Nom', this.id)" onBlur="mev('Nom', this.id)" />
+                <input type="text" name="prenom" id="prenom" maxlength="50" class="input_connexion" value="Prenom" onClick="saisir('Prenom', this.id)" onMouseOut="retablir('Prenom', this.id)" onBlur="mev('Prenom', this.id)" />
+                <br />
+                <input type="button" id="valider_connexion" class="input_connexion" value="Valider" onClick="connexion()"/>
+            </form>
+            <h2> Inscription </h2>
+            Sinon tu peux t'inscrire en remplissant le formulaire suivant !
+            <div id="message_inscription">
+                Tous les champs sont obligatoires
+            </div>
+            <form id="inscription" name="inscription" method="post">
+                <input type="text" name="nom" id="nom" maxlength="50" class="input_inscription" value="Nom" onClick="saisir('Nom', this.id)" onMouseOut="retablir('Nom', this.id)" onBlur="mev('Nom', this.id)" />
+                <input type="text" name="prenom" id="prenom" maxlength="50" class="input_inscription" value="Prenom" onClick="saisir('Prenom', this.id)" onMouseOut="retablir('Prenom', this.id)" onBlur="mev('Prenom', this.id)" />
+                <br />
+                <input type="text" name="email" id="email" maxlength="50" class="input_inscription" value="Email" onClick="saisir('Email', this.id)" onMouseOut="retablir('Email', this.id)" onBlur="mev('Email', this.id)" />
+                <input type="text" name="pseudo" id="pseudo" maxlength="50" class="input_inscription" value="Pseudo" onClick="saisir('Pseudo', this.id)" onMouseOut="retablir('Pseudo', this.id)" onBlur="mev('Pseudo', this.id)" />
+                <br />
+                La date de naissance doit etre au format jj/mm/aaaa.
+                <br />
+                <input type="text" name="date_naissance"  id="date_naissance" maxlength="50" class="input_inscription" value="Date de naissance" onClick="saisir('Date de naissance', this.id)" onMouseOut="retablir('Date de naissance', this.id)" onBlur="mev('Date de naissance', this.id)" />
+                <br />
+                Le mot de passe doit contenir au moins 8 caractères dont une majuscule, une minuscule et un chiffre.
+                <br />
+                <input type="password" name="mot_de_passe" id="mot_de_passe" maxlength="50" class="input_inscription" value="Mot de passe" onClick="saisir('Mot de passe', this.id)" onMouseOut="retablir('Mot de passe', this.id)" onBlur="mev('Mot de passe', this.id)" />
+                <input type="password" name="confirm_mot_de_passe" id="confirm_mot_de_passe" maxlength="50" class="input_inscription" value="Confirmer mp" onClick="saisir('Confirmer mp', this.id)" onMouseOut="retablir('Confirmer mp', this.id)" onBlur="mev('Confirmer mp', this.id)" />
+                <br />
+                <input type="button" name="valider_inscription" id="valider_inscription" class="input_inscription" value="Valider" onClick="inscription()"/>
+            </form>
+
+        </section>
+
+    </div> <!-- fin div corps (agencement horizontal) -->
+
+    <!-- bas de la page -->
+    <footer>
+        <p>
+            Tout droit réservés à Scriptarium, marque déposée de David Latapie
+        </p>
+    </footer>
+</body>
+
+</html>
