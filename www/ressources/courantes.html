@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <title> La bibliothèque d'Hamaskis </title>
+    <link rel = "stylesheet" type = "text/css" href = "../style.css" />
+</head>
+
+<body>
+    <!-- en-tete -->
+    <header>
+        <li> <a href="user/connexion.html"> Connexion </a> </li>
+        <h1 id="titre_page"> La bibliothèque d'Hamaskis </h1>
+    </header>
+
+    <!-- menu de navigation horizontal -->
+    <nav>
+        <menu id="menu">
+            <li class="lien_menu"> <a class="affichage_lien_menu" href="../index.html"> Accueil </a> </li>
+            <li class="lien_menu"> <a class="affichage_lien_menu" href="../lore.html"> Histoire de Titan </a> </li>
+            <li class="lien_menu"> <a class="affichage_lien_menu" href="../scenarios.html"> Scénarios </a> </li>
+            <li class="lien_menu"> <a class="affichage_lien_menu" href="../ressources.html"> Ressources </a> </li>
+            <li class="lien_menu"> <a class="affichage_lien_menu" href="../fral.html"> Chroniques de Frâl </a> </li>
+        </menu>
+    </nav>
+
+    <div id="corps">
+        <!-- menu de navigation latéral -->
+        <aside>
+            <nav>
+                <menu id="menu_lat">
+                    <li class="lien_menu_lat"> <a class="affichage_lien_menu_lat" href="regen.html"> Régénération et mort </a> </li>
+                    <li class="lien_menu_lat"> <a class="affichage_lien_menu_lat" href="chemin"> tableau 3 </a> </li>
+                </menu>
+            </nav>
+        </aside>
+
+        <!-- corps de la page -->
+        <section>
+            <h2> Modificateurs aux actions courantes</h2>
+
+            <table class="jdrTable"><caption> Corrompre (p.60) </caption>
+                <thead>
+                    <tr>
+                        <th>Bonus</th>
+                        <th>Corruption</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>+4</td>
+                        <td>Le pot de vin est très important</td>
+                    </tr>
+                    <tr>
+                        <td>+2</td>
+                        <td>Le pot de vin est important</td>
+                    </tr>
+                    <tr>
+                        <td>+1</td>
+                        <td>Le pot de vin est raisonnable</td>
+                    </tr>
+                    <tr>
+                        <td>-2</td>
+                        <td>Le pot de vin est petit</td>
+                    </tr>
+                    <tr>
+                        <td>-3</td>
+                        <td>La cible s'offusque en cas de corruption</td>
+                    </tr>
+                    <tr>
+                        <td>-4</td>
+                        <td>Le pot de vin est ridiculement petit</td>
+                    </tr>
+                    <tr>
+                        <td>+2</td>
+                        <td>Héros plus nombreux que les cibles</td>
+                    </tr>
+                    <tr>
+                        <td>-1</td>
+                        <td>Il y a plusieurs personnes à escroquer</td>
+                    </tr>
+                    <tr>
+                        <td>-2</td>
+                        <td>Cibles plus nombreuses que les héros</td>
+                    </tr>
+                    <tr>
+                        <td>+2</td>
+                        <td>La personne vidée est amicale</td>
+                    </tr>
+                    <tr>
+                        <td>-1</td>
+                        <td>La personne vidée est neutre</td>
+                    </tr>
+                    <tr>
+                        <td>-3</td>
+                        <td>La personne visée est inamicale</td>
+                    </tr>
+                    <tr>
+                        <td>-5</td>
+                        <td>La personne visée est hostile</td>
+                    </tr>
+                    <tr>
+                        <td>+3</td>
+                        <td>La requête est raisonnable</td>
+                    </tr>
+                    <tr>
+                        <td>+0</td>
+                        <td>La requête est acceptable</td>
+                    </tr>
+                    <tr>
+                        <td>-3</td>
+                        <td>La requête est déraisonnable</td>
+                    </tr>
+                    <tr>
+                        <td>-6</td>
+                        <td>La requête est inacceptable</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class="jdrTable"><caption>Escamoter (p.68)</caption>
+                <thead>
+                    <tr>
+                        <th>Bonus</th>
+                        <th>Escamotage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>+2</td>
+                        <td>Objet très petit</td>
+                    </tr>
+                    <tr>
+                        <td>-2</td>
+                        <td>Objet de taille moyenne</td>
+                    </tr>
+                    <tr>
+                        <td>-3</td>
+                        <td>Objet à la vue de tous</td>
+                    </tr>
+                    <tr>
+                        <td>-3</td>
+                        <td>Objet pouvant faire du bruit</td>
+                    </tr>
+                    <tr>
+                        <td>-4</td>
+                        <td>Grand objet</td>
+                    </tr>
+                    <tr>
+                        <td>+3</td>
+                        <td>Obscurité</td>
+                    </tr>
+                    <tr>
+                        <td>+2</td>
+                        <td>La cible est dénuée d'intelligence</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class="jdrTable"><caption>Marchander (p.61 et prix p.155)</caption>
+                <thead>
+                    <tr>
+                        <th>Bonus</th>
+                        <th>Marchandage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>+2</td>
+                        <td>Marchand amical</td>
+                    </tr>
+                    <tr>
+                        <td>-3</td>
+                        <td>Marchand inamical</td>
+                    </tr>
+                    <tr>
+                        <td>-5</td>
+                        <td>Marchand hostile</td>
+                    </tr>
+                    <tr>
+                        <td>+3</td>
+                        <td>Vendre à moitié prix</td>
+                    </tr>
+                    <tr>
+                        <td>+3</td>
+                        <td>Acheter au double du prix</td>
+                    </tr>
+                    <tr>
+                        <td>-3</td>
+                        <td>Acheter à moitié prix</td>
+                    </tr>
+                    <tr>
+                        <td>-3</td>
+                        <td>Vendre au double du prix</td>
+                    </tr>
+                    <tr>
+                        <td>+2</td>
+                        <td>Objet facile à trouver</td>
+                    </tr>
+                    <tr>
+                        <td>-2</td>
+                        <td>Objet peu commun</td>
+                    </tr>
+                    <tr>
+                        <td>-3</td>
+                        <td>Objet à l'évidence volé</td>
+                    </tr>
+                    <tr>
+                        <td>-4</td>
+                        <td>Objet rare</td>
+                    </tr>
+                    <tr>
+                        <td>-6</td>
+                        <td>Objet très rare</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class="jdrTable"><caption>Se déguiser (p.61)</caption>
+                <thead>
+                    <tr>
+                        <th>Bonus</th>
+                        <th>Déguisement</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>+3</td>
+                        <td>En pleine obscurité</td>
+                    </tr>
+                    <tr>
+                        <td>+1</td>
+                        <td>Dans la pénombre</td>
+                    </tr>
+                    <tr>
+                        <td>-2</td>
+                        <td>Éclairage important</td>
+                    </tr>
+                    <tr>
+                        <td>+2</td>
+                        <td>La cible ne connaît pas le Héros</td>
+                    </tr>
+                    <tr>
+                        <td>-2</td>
+                        <td>La cible connaît un peu le Héros</td>
+                    </tr>
+                    <tr>
+                        <td>-3</td>
+                        <td>Le Héros est déguisé en une personne connue de la cible</td>
+                    </tr>
+                    <tr>
+                        <td>-Vigil.</td>
+                        <td>La cible possède Vigilance</td>
+                    </tr>
+                    <tr>
+                        <td>-3</td>
+                        <td>La Héros n'a pas Déguisement</td>
+                    </tr>
+                    <tr>
+                        <td>+1</td>
+                        <td>Que de petites altérations à faire</td>
+                    </tr>
+                    <tr>
+                        <td>-2</td>
+                        <td>Altérations importantes (peau, ...)</td>
+                    </tr>
+                    <tr>
+                        <td>-4</td>
+                        <td>Altérations très importantes (sexe, ...)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class="jdrTable"><caption>Perception (p.68)</caption>
+                <thead>
+                    <tr>
+                        <th>Vigilance</th>
+                        <th>Furtivité</th>
+                        <th>Perception</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>-8</td>
+                        <td>+8</td>
+                        <td>Héros/objet invisible</td>
+                    </tr>
+                    <tr>
+                        <td>-5</td>
+                        <td>+5</td>
+                        <td>Héros/objet très petit</td>
+                    </tr>
+                    <tr>
+                        <td>-2</td>
+                        <td>+2</td>
+                        <td>Héros/objet petit</td>
+                    </tr>
+                    <tr>
+                        <td>+2</td>
+                        <td>-2</td>
+                        <td>Héros/objet grand</td>
+                    </tr>
+                    <tr>
+                        <td>-5</td>
+                        <td>+5</td>
+                        <td>Héros/objet très grand</td>
+                    </tr>
+                    <tr>
+                        <td>-5</td>
+                        <td>+5</td>
+                        <td>Enterré/hors de vue</td>
+                    </tr>
+                    <tr>
+                        <td>-4</td>
+                        <td>+4</td>
+                        <td>Broussailles épaisses/forêt</td>
+                    </tr>
+                    <tr>
+                        <td>-2</td>
+                        <td>+2</td>
+                        <td>Camouflé</td>
+                    </tr>
+                    <tr>
+                        <td>+4</td>
+                        <td>-4</td>
+                        <td>Dans un espace ouvert</td>
+                    </tr>
+                    <tr>
+                        <td>+2</td>
+                        <td>-2</td>
+                        <td>En mouvement</td>
+                    </tr>
+                    <tr>
+                        <td>+3</td>
+                        <td>-3</td>
+                        <td>Chercheur plus grand</td>
+                    </tr>
+                    <tr>
+                        <td>+4</td>
+                        <td>-4</td>
+                        <td>Chercheur avec chiens, etc.</td>
+                    </tr>
+                    <tr>
+                        <td>-4</td>
+                        <td>+4</td>
+                        <td>Obscurité</td>
+                    </tr>
+                    <tr>
+                        <td>-2</td>
+                        <td>+2</td>
+                        <td>Lumière faible</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class="jdrTable"><caption>Se déplacer (p.56)</caption>
+                <thead>
+                    <tr>
+                        <th>Bonus</th>
+                        <th>Déplacement</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>+7</td>
+                        <td>Le Héros vole</td>
+                    </tr>
+                    <tr>
+                        <td>+4</td>
+                        <td>Le Héros est à cheval</td>
+                    </tr>
+                    <tr>
+                        <td>+2</td>
+                        <td>Terrain dégagé</td>
+                    </tr>
+                    <tr>
+                        <td>+Force</td>
+                        <td>Avec la compétence Force</td>
+                    </tr>
+                    <tr>
+                        <td>-1</td>
+                        <td>En cotte de maille</td>
+                    </tr>
+                    <tr>
+                        <td>-2</td>
+                        <td>En armure de plaques</td>
+                    </tr>
+                    <tr>
+                        <td>-2</td>
+                        <td>Avec chargement lourd</td>
+                    </tr>
+                    <tr>
+                        <td>-4</td>
+                        <td>Avec chargement très lourd</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class="jdrTable"><caption>Nager (p.58)</caption>
+                <thead>
+                    <tr>
+                        <th>Bonus</th>
+                        <th>Nage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>-2</td>
+                        <td>Endurance de 3 ou moins</td>
+                    </tr>
+                    <tr>
+                        <td>-2</td>
+                        <td>Nager en étant attaqué</td>
+                    </tr>
+                    <tr>
+                        <td>-2</td>
+                        <td>Avec une charge lourde</td>
+                    </tr>
+                    <tr>
+                        <td>-2</td>
+                        <td>En cotte de mailles</td>
+                    </tr>
+                    <tr>
+                        <td>-4</td>
+                        <td>Avec une charge très lourde</td>
+                    </tr>
+                    <tr>
+                        <td>-4</td>
+                        <td>En armure de plaques</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class="jdrTable"><caption> Escalader (p.56) </caption>
+                <thead>
+                    <tr>
+                        <th>Bonus</th>
+                        <th>Escalade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>-2</td>
+                        <td>Se déplacer d'un mètre en plus</td>
+                    </tr>
+                    <tr>
+                        <td>-2</td>
+                        <td>Grimper en étant attaqué</td>
+                    </tr>
+                    <tr>
+                        <td>-2</td>
+                        <td>Dénivelé entre 45° et 60°</td>
+                    </tr>
+                    <tr>
+                        <td>-4</td>
+                        <td>Dénivelé entre 60° et 85°</td>
+                    </tr>
+                    <tr>
+                        <td>-6</td>
+                        <td>Dénivelé vertical</td>
+                    </tr>
+                    <tr>
+                        <td>-1</td>
+                        <td>En cuirasse</td>
+                    </tr>
+                    <tr>
+                        <td>-2</td>
+                        <td>Avec une charge lourde</td>
+                    </tr>
+                    <tr>
+                        <td>-3</td>
+                        <td>En cotte de maille</td>
+                    </tr>
+                    <tr>
+                        <td>-4</td>
+                        <td>Avec une charge très lourde</td>
+                    </tr>
+                    <tr>
+                        <td>-5</td>
+                        <td>Avec une armure de plaques</td>
+                    </tr>
+                    <tr>
+                        <td>-1</td>
+                        <td>Arbre avec peu de branches</td>
+                    </tr>
+                    <tr>
+                        <td>-2</td>
+                        <td>Branches d'arbre souples</td>
+                    </tr>
+                    <tr>
+                        <td>-2</td>
+                        <td>Surface glissante/instable</td>
+                    </tr>
+                    <tr>
+                        <td>-3</td>
+                        <td>Pas de prise</td>
+                    </tr>
+                    <tr>
+                        <td>-3</td>
+                        <td>Suspendu dans le vide</td>
+                    </tr>
+                    <tr>
+                        <td>+2</td>
+                        <td>Outils d'escalade (pointes, etc.)</td>
+                    </tr>
+                    <tr>
+                        <td>+2</td>
+                        <td>Encordé à un autre grimpeur</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+
+    </div> <!-- fin div corps (agencement horizontal) -->
+
+    <!-- bas de la page -->
+    <footer>
+        <p>
+            Tout les droits sont réservés à Scriptarium, marque déposée de David Latapie
+        </p>
+    </footer>
+</body>
+
+</html>
