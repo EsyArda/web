@@ -13,7 +13,7 @@ A vérifier avec le [validateur en ligne du W3C](http://validator.w3.org/#valida
     - [ ] Mettre en place divers éléments :
         - [ ] une liste (à puces ou ordonnée)
         - [ ] au moins une image avec une légende (utilisez les balises appropriées).
-        - [ ] un tableau.
+        - [x] un tableau.
     - [x] Mettre plusieurs types de lien hypertexte dans votre menu (un lien vers une seconde page de votre site, un lien vers une "ancre" et un lien vers un site extérieur).
 
 2. Deuxième étape
