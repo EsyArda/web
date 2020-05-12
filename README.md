@@ -20,7 +20,8 @@ A vérifier avec le [validateur en ligne du W3C](http://validator.w3.org/#valida
     - [x] Il est demandé que la mise en forme ainsi réalisée soit relativement uniforme à la visualisation sur différents navigateurs. Pour cela il faut écraser les styles de base des navigateurs en définissant un style pour tous les éléments utilisés. Cela peut être fait en utilisant la technique du reset CSS ou bien d'un style de base.
     - [ ] La mise en forme produite devra contenir à minima tous les éléments suivants :
         - [ ] au moins une flexbox.
-        - [ ] Vous utiliserez des "pseudo-formats" qui permettent de rendre l'apparence de votre page plus dynamique (au survol d'un élément, lors d'un clic ou lorqu'un lien a été consulté.). Vous utilisez aussi la propriété css "transition".
+        - [ ] Vous utiliserez des "pseudo-formats" qui permettent de rendre l'apparence de votre page plus dynamique (au survol d'un élément, lors d'un clic ou lorqu'un lien a été consulté.).
+        - [ ] Vous utilisez aussi la propriété css "transition".
     - [ ] Votre site devra s'adapter automatiquement à différentes résolutions d'écran (moniteurs, mobiles...). Vous utiliserez pour cela les propriétés "Media Queries" du CSS3 (l'utilisation des frameworks comme bootstrap est interdite).
 
 3. Troisième étape
