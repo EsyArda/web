@@ -125,6 +125,12 @@ p a
     color: #FF9966;
 }
 
+a.lien
+{
+    text-decoration: none;
+    color: #FF9966;
+}
+
 /* Tables */
 
 table.jdrTable {
@@ -153,6 +159,8 @@ table.jdrTable thead th {
     text-align: center;
 }
 
+/* Légendes */
+
 caption {
     display: table-caption;
     text-align: left;
@@ -162,13 +170,29 @@ caption {
     padding-top: 1em;
 }
 
+/* Images */
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+figcaption {
+    color: #FF9966;
+    font-size: 1.4em;
+    padding: 0.2em;
+    text-align: center;
+}
+
 img.logo {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 100px;
 }
-
 
 /******************************************************************************/
 /* pied de la page */

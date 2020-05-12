@@ -10,9 +10,9 @@ A vérifier avec le [validateur en ligne du W3C](http://validator.w3.org/#valida
     - [x] Mettre en place le squelette de votre page en utilisant le "doctype" propre au HTML5. Votre page devra avoir un titre et devra être au format (charset) UTF-8. (Voir balises html, head, body...)
     - [x] Mettre en place une structure hiérarchique claire : En-tête, menu, article, ...(Voir balises header, nav, article, aside, section, footer,...) **> article manquant**
     - [x] Organiser le texte en paragraphe, hierarchiser les différents titres et mettre les passages ou les éléments clefs en évidence.(Voir balises p, strong, em, mark, h1, h2...)
-    - [ ] Mettre en place divers éléments :
-        - [ ] une liste (à puces ou ordonnée)
-        - [ ] au moins une image avec une légende (utilisez les balises appropriées).
+    - [x] Mettre en place divers éléments :
+        - [x] une liste (à puces ou ordonnée)
+        - [x] au moins une image avec une légende (utilisez les balises appropriées).
         - [x] un tableau.
     - [x] Mettre plusieurs types de lien hypertexte dans votre menu (un lien vers une seconde page de votre site, un lien vers une "ancre" et un lien vers un site extérieur).
 
