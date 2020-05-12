@@ -162,6 +162,13 @@ caption {
     padding-top: 1em;
 }
 
+img.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+}
+
 
 /******************************************************************************/
 /* pied de la page */
