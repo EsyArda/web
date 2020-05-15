@@ -192,6 +192,7 @@ img.logo {
     margin-left: auto;
     margin-right: auto;
     width: 100px;
+    margin-bottom: 40px;
 }
 
 /******************************************************************************/
@@ -301,6 +302,23 @@ footer
 form
 {
     line-height: 2;
+    display: table;
+    margin: auto;
+    text-align: center;
+}
+
+#message_form
+{
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  padding-left: 0px;
+  padding-right: 50px;
+  width: 285px;
+  border: 2px solid;
+  border-color: #FF9966;
+  border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
 }
 
 input
@@ -314,24 +332,7 @@ input
     border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
 }
 
-#connexion
-{
-
-}
-
-#inscription
-{
-
-}
-
-#message_inscription
-{
-    width: 500px;
-    text-align: center;
-    padding: 10px;
-    margin: 20px;
-    color : #DDD;
-    border: 4px solid;
-    border-color: #777;
-    border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+input:invalid {
+  border: 2px solid;
+  border-color: #FF9966;
 }

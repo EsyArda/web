@@ -33,44 +33,48 @@
             <nav>
                 <menu id="menu_lat">
                     <li class="lien_menu_lat"> <a class="affichage_lien_menu_lat" href="https://scriptarium.fr/defisfantastiques/"> Site officiel </a> </li>
-                    <li class="lien_menu_lat"> <a class="affichage_lien_menu_lat" href="#contact"> Contact </a> </li>
                 </menu>
             </nav>
         </aside>
 
         <!-- corps de la page -->
         <section>
-            <h2> Connexion </h2>
-            Tu possède déjà un compte ? Connecte toi !
-            <form id="connexion" name="connexion" method="post"/>
-                <input type="text" name="nom" id="nom" maxlength="50" class="input_connexion" value="Nom" onClick="saisir('Nom', this.id)" onMouseOut="retablir('Nom', this.id)" onBlur="mev('Nom', this.id)" />
-                <input type="text" name="prenom" id="prenom" maxlength="50" class="input_connexion" value="Prenom" onClick="saisir('Prenom', this.id)" onMouseOut="retablir('Prenom', this.id)" onBlur="mev('Prenom', this.id)" />
-                <br />
-                <input type="button" id="valider_connexion" class="input_connexion" value="Valider" onClick="connexion()"/>
+            <form method="POST" action="htbin/register.py" id="form">
+                <div id="inscription">
+                    <h3>Inscription</h3>
+                    <p id = "message_form"> Ces champs sont obligatoires </p>
+                    <p>
+                        <label for="lastname">Nom</label>
+                        <input type="text" name="lastname" id="lastname" required>
+                    </p>
+                    <p>
+                        <label for="firstname">Prénom</label>
+                        <input type="text" name="firstname" id="fistname" required>
+                    </p>
+                    <p>
+                        <label for="birthdate">Date de naissance</label>
+                        <input type="texte" name="birthdate" id="birthdate">
+                    </p>
+                    <p>
+                        <label for="username">Nom d'utilisateur</label>
+                    <input type="text" name="username" id="username" required>
+                    </p>
+                    <p>
+                        <label for="userpwd">Mot de passe </label>
+                        <input type="password" name="userpwd" id="userpwd" required>
+                        <span id="helpwd"></span> <!--Pour javascript-->
+                    </p>
+                    <p> (8 caractères minimum, un chiffre, une majuscule, une minuscule) </p>
+                    <p>
+                        <label for="usermail">Adresse email</label>
+                        <input type="text" name="usermail" id="usermail" required>
+                        <span id="helpemail"></span> <!--Pour javascript-->
+                    </p>
+                    <input type="submit" value="S'inscrire" id="valid">
+                </div>
             </form>
-            <h2> Inscription </h2>
-            Sinon tu peux t'inscrire en remplissant le formulaire suivant !
-            <div id="message_inscription">
-                Tous les champs sont obligatoires
-            </div>
-            <form id="inscription" name="inscription" method="post">
-                <input type="text" name="nom" id="nom" maxlength="50" class="input_inscription" value="Nom" onClick="saisir('Nom', this.id)" onMouseOut="retablir('Nom', this.id)" onBlur="mev('Nom', this.id)" />
-                <input type="text" name="prenom" id="prenom" maxlength="50" class="input_inscription" value="Prenom" onClick="saisir('Prenom', this.id)" onMouseOut="retablir('Prenom', this.id)" onBlur="mev('Prenom', this.id)" />
-                <br />
-                <input type="text" name="email" id="email" maxlength="50" class="input_inscription" value="Email" onClick="saisir('Email', this.id)" onMouseOut="retablir('Email', this.id)" onBlur="mev('Email', this.id)" />
-                <input type="text" name="pseudo" id="pseudo" maxlength="50" class="input_inscription" value="Pseudo" onClick="saisir('Pseudo', this.id)" onMouseOut="retablir('Pseudo', this.id)" onBlur="mev('Pseudo', this.id)" />
-                <br />
-                La date de naissance doit etre au format jj/mm/aaaa.
-                <br />
-                <input type="text" name="date_naissance"  id="date_naissance" maxlength="50" class="input_inscription" value="Date de naissance" onClick="saisir('Date de naissance', this.id)" onMouseOut="retablir('Date de naissance', this.id)" onBlur="mev('Date de naissance', this.id)" />
-                <br />
-                Le mot de passe doit contenir au moins 8 caractères dont une majuscule, une minuscule et un chiffre.
-                <br />
-                <input type="password" name="mot_de_passe" id="mot_de_passe" maxlength="50" class="input_inscription" value="Mot de passe" onClick="saisir('Mot de passe', this.id)" onMouseOut="retablir('Mot de passe', this.id)" onBlur="mev('Mot de passe', this.id)" />
-                <input type="password" name="confirm_mot_de_passe" id="confirm_mot_de_passe" maxlength="50" class="input_inscription" value="Confirmer mp" onClick="saisir('Confirmer mp', this.id)" onMouseOut="retablir('Confirmer mp', this.id)" onBlur="mev('Confirmer mp', this.id)" />
-                <br />
-                <input type="button" name="valider_inscription" id="valider_inscription" class="input_inscription" value="Valider" onClick="inscription()"/>
-            </form>
+
+            <script src="form.js"></script>
 
         </section>
 
