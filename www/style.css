@@ -197,6 +197,20 @@ img.logo {
 
 /******************************************************************************/
 /* pied de la page */
+
+#retour_haut_page
+{
+    width: 300px;
+    text-decoration: none;
+    color: #FF9966;
+    font-size: 1.1em;
+    padding: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 footer
 {
     width: 85%;
