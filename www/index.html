@@ -11,7 +11,6 @@
 <body>
     <!-- en-tete -->
     <header>
-        <li> <a href="user/connexion.html"> Connexion </a> </li>
         <h1 id="titre_page"> La bibliothèque d'Hamaskis </h1>
     </header>
 
@@ -47,8 +46,25 @@
                 C'est le lieu idéal pour retrouver des informations sur Titan, des aventures, des aides de jeu et bien plus !
                 Tous le savoir que vous trouverez ici proviens du jeu de rôle <em>Défis fantastiques</em>.
             </p>
+            <h2> Connexion </h2>
+            <form method="POST" id="connexion" action="htbin/login.py">
+              <p>
+                  <label for="username">Nom d'utilisateur</label>
+                  <input type="text" name="username" id="username" required>
+              </p>
+              <p>
+                  <label for="userpwd">Mot de passe </label>
+                  <input type="password" name="userpwd" id="userpwd" required>
+              </p>
+              <input type="submit" value="Se connecter" id="valid">
+              <br />
+              <a href="user/connexion.html" id="inscription"> Pas de compte ? Inscription </a>
+            </form>
+
+            <script src="connexion.js"> </script>
+
             <h2 id="contact"> Contact </h2>
-            <p> Lilian et Coralie.
+            <p> Site géré par Lilian et Coralie.
             </p>
 
         </section>

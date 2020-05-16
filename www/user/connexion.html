@@ -12,7 +12,6 @@
 <body>
     <!-- en-tete -->
     <header>
-        <li> <a href="index.html"> Connexion </a> </li>
         <h1 id="titre_page"> La bibliothèque d'Hamaskis </h1>
     </header>
 
@@ -40,7 +39,7 @@
         <!-- corps de la page -->
         <section>
             <form method="POST" action="../htbin/register.py" id="form">
-                <div id="inscription">
+                <div id="inscription_form">
                     <h3>Inscription</h3>
                     <p id = "message_form"> Ces champs sont obligatoires </p>
                     <p>
@@ -57,7 +56,7 @@
                     </p>
                     <p>
                         <label for="username">Nom d'utilisateur</label>
-                    <input type="text" name="username" id="username" required>
+                        <input type="text" name="username" id="username" required>
                     </p>
                     <p>
                         <label for="userpwd">Mot de passe </label>

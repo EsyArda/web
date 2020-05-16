@@ -21,8 +21,6 @@ form.addEventListener("submit", function (e) { // Au moment de valider
     var userpwd = form.elements.userpwd.value;
     var birthdate = form.elements.birthdate.value;
     var usermail = form.elements.usermail.value;
-    var lastname = form.elements.lastname.value;
-    var firstname = form.elements.firstname.value;
     if (birthdate != "") {
         var regexBdt = /^[0-9]{2}\/[0-9]{2}\/[0-9]{4}$/;
         if (!regexBdt.test(birthdate)) {
@@ -54,4 +52,5 @@ form.addEventListener("submit", function (e) { // Au moment de valider
             alert("Email non valide")
         }
     }
+    e.preventDefault();
 });
