@@ -15,9 +15,9 @@ document.getElementById("userpwd").addEventListener('input', function (e) { // P
     aideMdpElt.style.color = "#FF9966";
 });
 
-var form = document.querySelector("form"); // Permet de récupérer les différentes données
+var form = document.querySelector("#form");
 
-form.addEventListener("submit", function (e) { // Au moment de valider
+form.addEventListener("submit", function (e) {
     var userpwd = form.elements.userpwd.value;
     var birthdate = form.elements.birthdate.value;
     var usermail = form.elements.usermail.value;
