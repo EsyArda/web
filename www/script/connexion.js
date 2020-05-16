@@ -8,7 +8,8 @@ function request (username, userpwd) {
     };
     httpRequest.open('POST', 'htbin/login.py', true);
     httpRequest.setRequestHeader('Content-Type', 'text/plain');
-    httpRequest.send('username=' + encodeURIComponent(username) + '&' + 'userpwd=' + encodeURIComponent(userpwd));
+    var data = 'username=' + encodeURIComponent(username) + '&' + 'userpwd=' + encodeURIComponent(userpwd);
+    httpRequest.send(data);
 }
 
 
