@@ -52,5 +52,4 @@ form.addEventListener("submit", function (e) { // Au moment de valider
             alert("Email non valide")
         }
     }
-    e.preventDefault();
 });
