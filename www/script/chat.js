@@ -15,9 +15,8 @@ function loadLog() {
         console.log("Coucou");
         var msg_data = '';
         $.each(data, function(key, value) {
-            msg_data = msg_data + '(' + value.date + ' ' + value.time + ')' + value.user + ' ' + value.msg + '<br>';
+            msg_data = msg_data + '(' + value.date + ' ' + value.time + ') > ' + value.user + ' : ' + value.msg + '<br>';
         });
-        $('#chatbox').append(msg_data);
+        $('#messages').empty().append(msg_data);
     });
 }
-// setInterval(loadLog, 10000);
