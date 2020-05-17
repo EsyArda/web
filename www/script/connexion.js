@@ -14,7 +14,6 @@ function request (username, userpwd) {
 
 
 var form = document.getElementById("login");
-var test = document.querySelector("login");
 
 form.addEventListener("submit", function (e) {
     e.preventDefault();
