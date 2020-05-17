@@ -31,42 +31,24 @@
             <nav>
                 <menu id="menu_lat">
                     <li class="lien_menu_lat"> <a class="affichage_lien_menu_lat" href="https://scriptarium.fr/defisfantastiques/"> Site officiel </a> </li>
-                    <li class="lien_menu_lat"> <a class="affichage_lien_menu_lat" href="chat.html"> Chat </a> </li>
                 </menu>
             </nav>
         </aside>
 
         <!-- corps de la page -->
         <section>
-            <h2> Bienvenue !</h2>
-            <figure>
-                <img class="logo" alt="Scroll" src="img/scroll.png"/>
-            </figure>
-            <p>
-                Vous voici dans la bilbiothèque d'Hamaskis, le dieu du savoir et de la magie.
-                C'est le lieu idéal pour retrouver des informations sur Titan, des aventures, des aides de jeu et bien plus !
-                Tous le savoir que vous trouverez ici proviens du jeu de rôle <em>Défis fantastiques</em>.
-            </p>
-            <h2> Connexion </h2>
-            <form method="POST" action="htbin/login.py" id="login">
-              <p>
-                  <label for="username">Nom d'utilisateur</label>
-                  <input type="text" name="username" id="username" required>
-              </p>
-              <p>
-                  <label for="userpwd">Mot de passe </label>
-                  <input type="password" name="userpwd" id="userpwd" required>
-              </p>
-              <input type="submit" value="Se connecter" id="valid">
-              <br />
-              <a href="inscription.html" id="inscription"> Pas de compte ? Inscription </a>
-            </form>
+            <div id="wrapper">
+                <div id="menu">
+                    <p class="welcome">Bonjour</p>
+                </div>
 
-            <script src="script/connexion.js"> </script>
+                <div id="chatbox"></div>
 
-            <h2 id="contact"> Contact </h2>
-            <p> Site géré par Lilian et Coralie.
-            </p>
+                <form name="message" action="">
+                    <input name="usermsg" type="text" id="usermsg" size="63" />
+                    <input name="submitmsg" type="submit"  id="submitmsg" value="Envoyer" />
+                </form>
+            </div>
 
         </section>
 
@@ -81,6 +63,8 @@
             Tout les droits sont réservés à <em>Scriptarium</em>, marque déposée de David Latapie.
         </p>
     </footer>
+    <script type="text/javascript" src="http://code.jquery.min.com/jquery.js"></script>
+    <script type="text/javascript" src="script/chat.js"> </script>
 </body>
 
 </html>
