@@ -31,12 +31,30 @@
             <nav>
                 <menu id="menu_lat">
                     <li class="lien_menu_lat"> <a class="affichage_lien_menu_lat" href="https://scriptarium.fr/defisfantastiques/"> Site officiel </a> </li>
+                    <li class="lien_menu_lat"> <a class="affichage_lien_menu_lat" href="chat.html"> Chat </a> </li>
                 </menu>
             </nav>
         </aside>
 
         <!-- corps de la page -->
         <section>
+
+          <h2> Connexion </h2>
+          <form method="POST" action="htbin/login.py" id="login">
+            <p>
+                <label for="username">Nom d'utilisateur</label>
+                <input type="text" name="username" id="username" required>
+            </p>
+            <p>
+                <label for="userpwd">Mot de passe </label>
+                <input type="password" name="userpwd" id="userpwd" required>
+            </p>
+            <input type="submit" value="Se connecter" id="valid">
+            <br />
+            <a href="inscription.html" id="inscription"> Pas de compte ? Inscription </a>
+          </form>
+          <script src="script/connexion.js"> </script>
+
             <div id="wrapper">
                 <div id="menu">
                     <p class="welcome">Bonjour</p>
