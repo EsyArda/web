@@ -1,0 +1,406 @@
+/* mise en page globale, structure de la page */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike,
+strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,  figure, figcaption,
+footer, header, hgroup,  menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0; /* Marge extérieure */
+    padding: 0; /* Marge intérieure */
+}
+
+html, body
+{
+    background-color: white;
+    font-family:tahoma, geneva, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+
+nav {
+    display:none;
+}
+
+#titre_page
+{
+    text-align: center;
+    padding: 40px;
+    font-weight: bold;
+    color: black;
+}
+
+#corps
+{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/******************************************************************************/
+/* corps de la page, pour les différentes sections */
+section
+{
+    margin: auto;
+    text-align: justify;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    margin: 1em;
+    background-color: white;
+    border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+    word-wrap: break-word;
+    color: black;
+    line-height: 1.5;
+    flex: 3;
+}
+
+/* titres de page */
+h2
+{
+    font-size: 1.6em;
+    text-align: left;
+    padding-top: 1em;
+    padding-bottom: 2em;
+    color: black;
+}
+
+h3
+{
+    font-size: 1.4em;
+    text-align: left;
+    padding-bottom: 2em;
+    color: black;
+}
+
+h4
+{
+    font-size: 1.2em;
+    color: black;
+}
+
+h5
+{
+    font-size: 1.1em;
+    color: black;
+}
+
+h6
+{
+    font-size: 1em;
+    color: black;
+}
+
+p
+{
+    max-width: 80em;
+    text-indent: 3em;
+    margin: 0 0 1em;*
+}
+
+p a
+{
+    text-decoration: none;
+    color: black;
+}
+
+a.lien
+{
+    text-decoration: none;
+    color: black;
+}
+
+a[href^="http"]:after {
+    font-size: 80%;
+    hyphens: none;
+    content: " [" attr(href) "] ";
+}
+
+/* Tables */
+
+table.jdrTable {
+    width: 90%;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+table.jdrTable td, table.jdrTable th {
+    border: 1px solid black;
+    padding: 0.5em 1em;
+}
+
+/* table.jdrTable tr:nth-child(even) {
+background: lightgrey;
+} */
+
+table.jdrTable thead th {
+    background-color: #;
+    font-weight: normal;
+    color: black;
+    text-align: center;
+}
+
+/* Légendes */
+
+caption {
+    display: table-caption;
+    text-align: left;
+    color: black;
+    font-size: 1.4em;
+    padding: 0.2em;
+    padding-top: 1em;
+}
+
+/* Images */
+
+img {
+    filter: grayscale(100%);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+figcaption {
+    color: black;
+    font-size: 1.4em;
+    padding: 0.2em;
+    text-align: center;
+}
+
+img.logo {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    margin-bottom: 40px;
+}
+
+/******************************************************************************/
+/* pied de la page */
+
+#retour_haut_page
+{
+    display: none;
+    width: 300px;
+    text-decoration: none;
+    color: #DDD;
+    font-size: 1.1em;
+    padding: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#retour_haut_page:hover
+{
+    color: #FF9966;
+    border-bottom: 4px solid;
+    border-color: #FF9966;
+    font-weight: bold;
+    transition-duration: 0s, 0s, 1s, 1s;
+    transition-property: font-weight, color, margin-left, border-bottom;
+}
+
+
+footer
+{
+    width: 85%;
+    height: 40px;
+    display: none;
+    margin: auto;
+    margin-top: 20px;;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    word-wrap: break-word;
+    background-color: #371326;
+    border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+    text-align: center;
+    color: #DDD;
+}
+
+/******************************************************************************/
+/* menu horizontal */
+#menu
+{
+    width: 85%;
+    height: 60px;
+    display: none;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0px;
+    padding: 0px;
+    word-wrap: break-word;
+    background-color: #371326;
+    border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+}
+
+.lien_menu
+{
+    display: none;
+    width: 100px;
+}
+
+.affichage_lien_menu {
+    text-decoration: none;
+    display: none;
+    text-align: center;
+    color: #DDD;
+    line-height: 60px;
+}
+
+.affichage_lien_menu:hover
+{
+    display: none;
+    color: #FF9966;
+    margin-left: 20px;
+    border-bottom: 4px solid;
+    border-color: #FF9966;
+    font-weight: bold;
+    transition-duration: 0s, 0s, 1s, 1s;
+    transition-property: font-weight, color, margin-left, border-bottom;
+}
+
+/******************************************************************************/
+
+/* menu latéral */
+#menu_lat
+{
+    display: none;
+    margin: auto;
+    text-align: justify;
+    padding: 20px;
+    margin: 20px;
+    word-wrap: break-word;
+    background-color: #371326;
+    border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+    flex: 1;
+}
+
+.lien_menu_lat
+{
+    display: none;
+}
+
+.affichage_lien_menu_lat
+{
+    text-decoration: none;
+    display: none;
+    text-align: left;
+    color: #DDD;
+    line-height: 40px;
+}
+
+.affichage_lien_menu_lat:hover
+{
+    display: none;
+    color: #FF9966;
+    font-weight: bold;
+    padding-left: 20px;
+    border-left: 4px solid;
+    border-color: #FF9966;
+    transition-duration: 0s, 0s, 1s, 1s;
+    transition-property: font-weight, color, padding-left, border-left;
+}
+
+/******************************************************************************/
+
+/* formulaire */
+
+#inscription
+{
+    display:none;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    color: #DDD;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#inscription:hover
+{
+    display: none;
+    color: #FF9966;
+    border-bottom: 2px solid;
+    border-color: #FF9966;
+    font-weight: bold;
+    transition-duration: 0s, 0s, 1s, 1s;
+    transition-property: font-weight, color, margin-left, border-bottom;
+}
+
+form
+{
+    line-height: 2;
+    display: none;
+    margin: auto;
+    text-align: center;
+}
+
+#message_form
+{
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    padding-left: 0px;
+    padding-right: 50px;
+    width: 285px;
+    border: 2px solid;
+    border-color: #FF9966;
+    border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+}
+
+#form input
+{
+    align: center;
+    margin: 10px;
+    background-color: #222;
+    color: #DDD;
+    padding: 5px;
+    border-color: #777;
+    border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+}
+
+#form input:invalid {
+    border: 2px solid;
+    border-color: #FF9966;
+}
+
+#login
+{
+    margin-bottom: 30px;
+}
+
+#login input
+{
+    align: center;
+    margin: 10px;
+    background-color: #222;
+    color: #DDD;
+    padding: 5px;
+    border-color: #777;
+    border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+}
+
+#messages
+{
+    display: none;
+    background-color: #222;
+    border-color: #777 2px solid;
+    border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+    padding: 10px;
+}
+
+#chatbox input
+{
+    display:none;
+    align: center;
+    margin: 10px;
+    background-color: #222;
+    padding: 5px;
+    border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+}
