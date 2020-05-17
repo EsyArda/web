@@ -306,7 +306,6 @@ footer
     color: #DDD;
     margin-left: auto;
     margin-right: auto;
-
 }
 
 #inscription:hover
@@ -357,6 +356,11 @@ form
   border-color: #FF9966;
 }
 
+#login
+{
+    margin-bottom: 30px;
+}
+
 #login input
 {
     align: center;
@@ -365,5 +369,22 @@ form
     color: #DDD;
     padding: 5px;
     border-color: #777;
+    border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+}
+
+#messages
+{
+  background-color: #222;
+  border-color: #777 2px solid;
+  border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+  padding: 10px;
+}
+
+#chatbox input
+{
+    align: center;
+    margin: 10px;
+    background-color: #222;
+    padding: 5px;
     border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
 }

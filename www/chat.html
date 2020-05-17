@@ -39,34 +39,31 @@
         <!-- corps de la page -->
         <section>
 
-          <h2> Connexion </h2>
-          <form method="POST" action="htbin/login.py" id="login">
-            <p>
-                <label for="username">Nom d'utilisateur</label>
-                <input type="text" name="username" id="username" required>
-            </p>
-            <p>
-                <label for="userpwd">Mot de passe </label>
-                <input type="password" name="userpwd" id="userpwd" required>
-            </p>
-            <input type="submit" value="Se connecter" id="valid">
-            <br />
-            <a href="inscription.html" id="inscription"> Pas de compte ? Inscription </a>
-          </form>
-          <script src="script/connexion.js"> </script>
+            <h2> Connexion </h2>
+            <form method="POST" action="htbin/login.py" id="login">
+                <p>
+                    <label for="username">Nom d'utilisateur</label>
+                    <input type="text" name="username" id="username" required>
+                </p>
+                <p>
+                    <label for="userpwd">Mot de passe </label>
+                    <input type="password" name="userpwd" id="userpwd" required>
+                </p>
+                    <input type="submit" value="Se connecter" id="valid">
+                <br />
+                <a href="inscription.html" id="inscription"> Pas de compte ? Inscription </a>
+            </form>
+            <script src="script/connexion.js"> </script>
 
             <div id="wrapper">
-                <div id="menu">
-                    <p class="welcome">Bonjour</p>
+                <h2> Chat </h2>
+                <div id="messages"></div>
+                <div>
+                    <form id="chatbox" name="message" action="">
+                        <input name="usermsg" type="text" id="usermsg" size="63" />
+                        <input name="submitmsg" type="submit"  id="submitmsg" value="Envoyer" />
+                    </form>
                 </div>
-
-                <div id="chatbox"></div>
-
-                <form name="message" action="">
-                    <input name="usermsg" type="text" id="usermsg" size="63" />
-                    <input name="submitmsg" type="submit"  id="submitmsg" value="Envoyer" />
-                </form>
-            </div>
 
         </section>
 
@@ -81,7 +78,7 @@
             Tout les droits sont réservés à <em>Scriptarium</em>, marque déposée de David Latapie.
         </p>
     </footer>
-    <script type="text/javascript" src="http://code.jquery.min.com/jquery.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
     <script type="text/javascript" src="script/chat.js"> </script>
 </body>
 
